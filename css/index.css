@@ -25,7 +25,7 @@ body {
   font-family: 'Inter UI', sans-serif;
   color: var(--white);
   background-color: var(--black);
-  font-weight: 300;
+  font-weight: 400;
   width: 100%;
   height: 100%;
 }
@@ -47,10 +47,18 @@ p,
 a[href] {
   color: var(--white);
   text-decoration: none;
+  transition: all .5s ease;
 }
 a[href]:visited {
   color: var(--white);
 }
+a[href]:hover{
+  -webkit-text-decoration: turquoise solid underline;
+  text-decoration: turquoise solid underline;
+  -webkit-text-underline-position: auto;
+  text-underline-position: auto 
+}
+
 main {
   padding: 2rem;
 }
@@ -105,15 +113,7 @@ header:after {
 header h1, header h2{
   display: block;
   font-size: 1em;
-}
-header h1{
-  font-weight: 300;
-  margin: 0;
-}
-header h2 {
-  font-weight: 300;
-  padding: 0;
-  margin: 0;
+  font-weight: 400;
 }
 
 
